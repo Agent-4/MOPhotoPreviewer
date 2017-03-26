@@ -20,23 +20,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="memory" translatesAutoresizingMaskIntoConstraints="NO" id="FGK-1Z-FFM">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memory" translatesAutoresizingMaskIntoConstraints="NO" id="FGK-1Z-FFM">
                                 <rect key="frame" x="78" y="141" width="165" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="LHG-7Y-AVF"/>
+                                    <constraint firstAttribute="width" constant="165" id="eeZ-RR-WUh"/>
+                                </constraints>
                             </imageView>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amy" translatesAutoresizingMaskIntoConstraints="NO" id="ljw-FN-QfH">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amy" translatesAutoresizingMaskIntoConstraints="NO" id="ljw-FN-QfH">
                                 <rect key="frame" x="74" y="338" width="173" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="cPg-3u-LFg"/>
+                                    <constraint firstAttribute="width" constant="173" id="uFV-lT-2B8"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MOPhotoPreviewer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B89-YE-ewI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MOPhotoPreviewer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B89-YE-ewI">
                                 <rect key="frame" x="16" y="42" width="288" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="gtX-v4-lwn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ljw-FN-QfH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0aR-Mb-EQz"/>
+                            <constraint firstItem="FGK-1Z-FFM" firstAttribute="top" secondItem="B89-YE-ewI" secondAttribute="bottom" constant="67" id="Cqt-3d-oX8"/>
+                            <constraint firstItem="B89-YE-ewI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="LEH-CV-1A0"/>
+                            <constraint firstItem="B89-YE-ewI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="LHP-mU-c07"/>
+                            <constraint firstItem="ljw-FN-QfH" firstAttribute="top" secondItem="FGK-1Z-FFM" secondAttribute="bottom" constant="93" id="eMc-mm-ham"/>
+                            <constraint firstItem="FGK-1Z-FFM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="et9-hb-zg8"/>
+                            <constraint firstAttribute="trailing" secondItem="B89-YE-ewI" secondAttribute="trailing" constant="16" id="jb8-UY-yjC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MOPhotoPreviewer" id="nGq-Da-ysz"/>
                     <connections>
