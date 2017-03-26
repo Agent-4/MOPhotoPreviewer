@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		460AC4CF1E87950D0055DE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4CE1E87950D0055DE3A /* AppDelegate.swift */; };
+		460AC4D11E87950D0055DE3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4D01E87950D0055DE3A /* ViewController.swift */; };
+		460AC4D41E87950D0055DE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460AC4D21E87950D0055DE3A /* Main.storyboard */; };
+		460AC4D61E87950D0055DE3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 460AC4D51E87950D0055DE3A /* Assets.xcassets */; };
+		460AC4D91E87950D0055DE3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 460AC4D71E87950D0055DE3A /* LaunchScreen.storyboard */; };
+		460AC4E41E87950D0055DE3A /* MOPhotoPreviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4E31E87950D0055DE3A /* MOPhotoPreviewerTests.swift */; };
+		460AC4EF1E87950D0055DE3A /* MOPhotoPreviewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4EE1E87950D0055DE3A /* MOPhotoPreviewerUITests.swift */; };
+		460AC4FF1E87957C0055DE3A /* MOPhotoPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4FD1E87957C0055DE3A /* MOPhotoPreviewer.swift */; };
+		460AC5001E87957C0055DE3A /* UIView+MOExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AC4FE1E87957C0055DE3A /* UIView+MOExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		460AC4E01E87950D0055DE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460AC4C31E87950D0055DE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 460AC4CA1E87950D0055DE3A;
+			remoteInfo = MOPhotoPreviewer;
+		};
+		460AC4EB1E87950D0055DE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 460AC4C31E87950D0055DE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 460AC4CA1E87950D0055DE3A;
+			remoteInfo = MOPhotoPreviewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		460AC4CB1E87950D0055DE3A /* MOPhotoPreviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOPhotoPreviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		460AC4CE1E87950D0055DE3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		460AC4D01E87950D0055DE3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		460AC4D31E87950D0055DE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		460AC4D51E87950D0055DE3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		460AC4D81E87950D0055DE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		460AC4DA1E87950D0055DE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460AC4DF1E87950D0055DE3A /* MOPhotoPreviewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOPhotoPreviewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		460AC4E31E87950D0055DE3A /* MOPhotoPreviewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPhotoPreviewerTests.swift; sourceTree = "<group>"; };
+		460AC4E51E87950D0055DE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460AC4EA1E87950D0055DE3A /* MOPhotoPreviewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOPhotoPreviewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		460AC4EE1E87950D0055DE3A /* MOPhotoPreviewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOPhotoPreviewerUITests.swift; sourceTree = "<group>"; };
+		460AC4F01E87950D0055DE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		460AC4FD1E87957C0055DE3A /* MOPhotoPreviewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOPhotoPreviewer.swift; sourceTree = "<group>"; };
+		460AC4FE1E87957C0055DE3A /* UIView+MOExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+MOExtension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		460AC4C81E87950D0055DE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4DC1E87950D0055DE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4E71E87950D0055DE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		460AC4C21E87950D0055DE3A = {
+			isa = PBXGroup;
+			children = (
+				460AC4CD1E87950D0055DE3A /* MOPhotoPreviewer */,
+				460AC4E21E87950D0055DE3A /* MOPhotoPreviewerTests */,
+				460AC4ED1E87950D0055DE3A /* MOPhotoPreviewerUITests */,
+				460AC4CC1E87950D0055DE3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		460AC4CC1E87950D0055DE3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				460AC4CB1E87950D0055DE3A /* MOPhotoPreviewer.app */,
+				460AC4DF1E87950D0055DE3A /* MOPhotoPreviewerTests.xctest */,
+				460AC4EA1E87950D0055DE3A /* MOPhotoPreviewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		460AC4CD1E87950D0055DE3A /* MOPhotoPreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				460AC4FC1E87957C0055DE3A /* MOPhotoPreviewer */,
+				460AC4CE1E87950D0055DE3A /* AppDelegate.swift */,
+				460AC4D01E87950D0055DE3A /* ViewController.swift */,
+				460AC4D21E87950D0055DE3A /* Main.storyboard */,
+				460AC4D51E87950D0055DE3A /* Assets.xcassets */,
+				460AC4D71E87950D0055DE3A /* LaunchScreen.storyboard */,
+				460AC4DA1E87950D0055DE3A /* Info.plist */,
+			);
+			path = MOPhotoPreviewer;
+			sourceTree = "<group>";
+		};
+		460AC4E21E87950D0055DE3A /* MOPhotoPreviewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				460AC4E31E87950D0055DE3A /* MOPhotoPreviewerTests.swift */,
+				460AC4E51E87950D0055DE3A /* Info.plist */,
+			);
+			path = MOPhotoPreviewerTests;
+			sourceTree = "<group>";
+		};
+		460AC4ED1E87950D0055DE3A /* MOPhotoPreviewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				460AC4EE1E87950D0055DE3A /* MOPhotoPreviewerUITests.swift */,
+				460AC4F01E87950D0055DE3A /* Info.plist */,
+			);
+			path = MOPhotoPreviewerUITests;
+			sourceTree = "<group>";
+		};
+		460AC4FC1E87957C0055DE3A /* MOPhotoPreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				460AC4FD1E87957C0055DE3A /* MOPhotoPreviewer.swift */,
+				460AC4FE1E87957C0055DE3A /* UIView+MOExtension.swift */,
+			);
+			path = MOPhotoPreviewer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		460AC4CA1E87950D0055DE3A /* MOPhotoPreviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460AC4F31E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewer" */;
+			buildPhases = (
+				460AC4C71E87950D0055DE3A /* Sources */,
+				460AC4C81E87950D0055DE3A /* Frameworks */,
+				460AC4C91E87950D0055DE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOPhotoPreviewer;
+			productName = MOPhotoPreviewer;
+			productReference = 460AC4CB1E87950D0055DE3A /* MOPhotoPreviewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		460AC4DE1E87950D0055DE3A /* MOPhotoPreviewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460AC4F61E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewerTests" */;
+			buildPhases = (
+				460AC4DB1E87950D0055DE3A /* Sources */,
+				460AC4DC1E87950D0055DE3A /* Frameworks */,
+				460AC4DD1E87950D0055DE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				460AC4E11E87950D0055DE3A /* PBXTargetDependency */,
+			);
+			name = MOPhotoPreviewerTests;
+			productName = MOPhotoPreviewerTests;
+			productReference = 460AC4DF1E87950D0055DE3A /* MOPhotoPreviewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		460AC4E91E87950D0055DE3A /* MOPhotoPreviewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 460AC4F91E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewerUITests" */;
+			buildPhases = (
+				460AC4E61E87950D0055DE3A /* Sources */,
+				460AC4E71E87950D0055DE3A /* Frameworks */,
+				460AC4E81E87950D0055DE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				460AC4EC1E87950D0055DE3A /* PBXTargetDependency */,
+			);
+			name = MOPhotoPreviewerUITests;
+			productName = MOPhotoPreviewerUITests;
+			productReference = 460AC4EA1E87950D0055DE3A /* MOPhotoPreviewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		460AC4C31E87950D0055DE3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "莫晓豪";
+				TargetAttributes = {
+					460AC4CA1E87950D0055DE3A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8NK5NY4T9X;
+						ProvisioningStyle = Automatic;
+					};
+					460AC4DE1E87950D0055DE3A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8NK5NY4T9X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 460AC4CA1E87950D0055DE3A;
+					};
+					460AC4E91E87950D0055DE3A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8NK5NY4T9X;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 460AC4CA1E87950D0055DE3A;
+					};
+				};
+			};
+			buildConfigurationList = 460AC4C61E87950D0055DE3A /* Build configuration list for PBXProject "MOPhotoPreviewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 460AC4C21E87950D0055DE3A;
+			productRefGroup = 460AC4CC1E87950D0055DE3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				460AC4CA1E87950D0055DE3A /* MOPhotoPreviewer */,
+				460AC4DE1E87950D0055DE3A /* MOPhotoPreviewerTests */,
+				460AC4E91E87950D0055DE3A /* MOPhotoPreviewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		460AC4C91E87950D0055DE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460AC4D91E87950D0055DE3A /* LaunchScreen.storyboard in Resources */,
+				460AC4D61E87950D0055DE3A /* Assets.xcassets in Resources */,
+				460AC4D41E87950D0055DE3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4DD1E87950D0055DE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4E81E87950D0055DE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		460AC4C71E87950D0055DE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460AC5001E87957C0055DE3A /* UIView+MOExtension.swift in Sources */,
+				460AC4D11E87950D0055DE3A /* ViewController.swift in Sources */,
+				460AC4FF1E87957C0055DE3A /* MOPhotoPreviewer.swift in Sources */,
+				460AC4CF1E87950D0055DE3A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4DB1E87950D0055DE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460AC4E41E87950D0055DE3A /* MOPhotoPreviewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		460AC4E61E87950D0055DE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460AC4EF1E87950D0055DE3A /* MOPhotoPreviewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		460AC4E11E87950D0055DE3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 460AC4CA1E87950D0055DE3A /* MOPhotoPreviewer */;
+			targetProxy = 460AC4E01E87950D0055DE3A /* PBXContainerItemProxy */;
+		};
+		460AC4EC1E87950D0055DE3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 460AC4CA1E87950D0055DE3A /* MOPhotoPreviewer */;
+			targetProxy = 460AC4EB1E87950D0055DE3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		460AC4D21E87950D0055DE3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				460AC4D31E87950D0055DE3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		460AC4D71E87950D0055DE3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				460AC4D81E87950D0055DE3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		460AC4F11E87950D0055DE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		460AC4F21E87950D0055DE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		460AC4F41E87950D0055DE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		460AC4F51E87950D0055DE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		460AC4F71E87950D0055DE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOPhotoPreviewer.app/MOPhotoPreviewer";
+			};
+			name = Debug;
+		};
+		460AC4F81E87950D0055DE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOPhotoPreviewer.app/MOPhotoPreviewer";
+			};
+			name = Release;
+		};
+		460AC4FA1E87950D0055DE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MOPhotoPreviewer;
+			};
+			name = Debug;
+		};
+		460AC4FB1E87950D0055DE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
+				INFOPLIST_FILE = MOPhotoPreviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.MOPhotoPreviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MOPhotoPreviewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		460AC4C61E87950D0055DE3A /* Build configuration list for PBXProject "MOPhotoPreviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460AC4F11E87950D0055DE3A /* Debug */,
+				460AC4F21E87950D0055DE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		460AC4F31E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460AC4F41E87950D0055DE3A /* Debug */,
+				460AC4F51E87950D0055DE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		460AC4F61E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460AC4F71E87950D0055DE3A /* Debug */,
+				460AC4F81E87950D0055DE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		460AC4F91E87950D0055DE3A /* Build configuration list for PBXNativeTarget "MOPhotoPreviewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460AC4FA1E87950D0055DE3A /* Debug */,
+				460AC4FB1E87950D0055DE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 460AC4C31E87950D0055DE3A /* Project object */;
+}
