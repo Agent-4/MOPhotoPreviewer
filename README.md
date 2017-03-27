@@ -8,7 +8,7 @@
 
 ##### 效果图：
 
-![photoPreviewer](http://7xsjfr.com1.z0.glb.clouddn.com/photoPreviewer.gif)
+<img src="http://7xsjfr.com1.z0.glb.clouddn.com/photoPreviewer.gif" width="240"> 
 
 ##### 用法：
 
