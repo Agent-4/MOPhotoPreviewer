@@ -2,8 +2,8 @@
 //  MoPhotoPreviewer.swift
 //  Mo
 //
-//  Created by 莫晓豪 on 2017/3/26.
-//  Copyright © 2017年 莫晓豪. All rights reserved.
+//  Created by moxiaohao on 2017/3/24.
+//  Copyright © 2017年 moxiaohao. All rights reserved.
 //
 
 import UIKit
@@ -178,7 +178,18 @@ class MOPhotoPreviewer: UIView, UIScrollViewDelegate {
                 PHPhotoLibrary.shared().performChanges({() -> Void in
                     //写入图片到相册
                     PHAssetChangeRequest.creationRequestForAsset(from: (self.fromTheImageView?.image!)!)
-                }, completionHandler: nil)
+                }, completionHandler: {(succeeded, error) -> Void in
+                    // 最好是异步操作，否则可能会阻塞主线程或引起奇怪的崩溃
+                    DispatchQueue.main.async {
+                        if succeeded {
+                            // 保存成功的提示 ** 自己可以自定义加入 HUD 提示 **
+                            print("保存成功！")
+                        }else {
+                            // 保存失败的提示 ** 自己可以自定义加入 HUD 提示 **
+                            print("保存失败！")
+                        }
+                    }
+                })
             }))
             alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
             let vc: UIViewController? = currentViewController()
