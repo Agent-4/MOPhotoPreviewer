@@ -173,11 +173,12 @@ class MOPhotoPreviewer: UIView, UIScrollViewDelegate {
     func longPress(_ recognizer: UILongPressGestureRecognizer) {
         // 最好加入状态判断
         if recognizer.state == .began {
+            let image = fromTheImageView?.image
             let alertController = UIAlertController(title: "保存图片", message: nil, preferredStyle: .actionSheet)
             alertController.addAction(UIAlertAction(title: "保存", style: .default, handler: {(_ action: UIAlertAction) -> Void in
                 PHPhotoLibrary.shared().performChanges({() -> Void in
                     //写入图片到相册
-                    PHAssetChangeRequest.creationRequestForAsset(from: (self.fromTheImageView?.image!)!)
+                    PHAssetChangeRequest.creationRequestForAsset(from: image!)
                 }, completionHandler: {(succeeded, error) -> Void in
                     // 最好是异步操作，否则可能会阻塞主线程或引起奇怪的崩溃
                     DispatchQueue.main.async {
