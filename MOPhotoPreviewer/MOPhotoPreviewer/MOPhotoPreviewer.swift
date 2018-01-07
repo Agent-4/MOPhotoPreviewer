@@ -30,15 +30,15 @@ class MOPhotoPreviewer: UIView, UIScrollViewDelegate {
         frame = UIScreen.main.bounds
         backgroundColor = UIColor.clear
         // 单击
-        let singleTap = UITapGestureRecognizer(target: self, action: #selector(self.singleTap))
+        let singleTap = UITapGestureRecognizer(target: self, action: #selector(self.singleTap(_:)))
         addGestureRecognizer(singleTap)
         // 双击
-        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(self.doubleTap))
+        let doubleTap = UITapGestureRecognizer(target: self, action: #selector(self.doubleTap(_:)))
         doubleTap.numberOfTapsRequired = 2
         singleTap.require(toFail: doubleTap)
         addGestureRecognizer(doubleTap)
         // 长按
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress))
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPress(_:)))
         addGestureRecognizer(longPress)
         
         // 设置模糊背景
@@ -152,12 +152,12 @@ class MOPhotoPreviewer: UIView, UIScrollViewDelegate {
     // MARK: - GestureRecognizer
     
     // 单击   ** dismiss **
-    func singleTap(_ recognizer: UITapGestureRecognizer) {
+    @objc func singleTap(_ recognizer: UITapGestureRecognizer) {
         dismiss()
     }
     
     // 双击   ** 放大 **
-    func doubleTap(_ recognizer: UITapGestureRecognizer) {
+    @objc func doubleTap(_ recognizer: UITapGestureRecognizer) {
         if (scrollView?.zoomScale)! > CGFloat(1.0) {
             scrollView?.setZoomScale(1.0, animated: true)
         }else {
@@ -170,7 +170,7 @@ class MOPhotoPreviewer: UIView, UIScrollViewDelegate {
     }
     
     // 长按   ** 保存图片到相册 **
-    func longPress(_ recognizer: UILongPressGestureRecognizer) {
+    @objc func longPress(_ recognizer: UILongPressGestureRecognizer) {
         // 最好加入状态判断
         if recognizer.state == .began {
             let image = fromTheImageView?.image

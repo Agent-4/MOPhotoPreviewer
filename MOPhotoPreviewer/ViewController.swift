@@ -24,12 +24,12 @@ class ViewController: UIViewController {
         
     }
     
-    func imageTap() {
+    @objc func imageTap() {
         let photoView = MOPhotoPreviewer()
         photoView.preview(fromImageView: image1, container: self.view)
     }
     
-    func imageTap2() {
+    @objc func imageTap2() {
         let photoView = MOPhotoPreviewer()
         photoView.preview(fromImageView: image2, container: self.view)
     }
